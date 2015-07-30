@@ -15,6 +15,15 @@ html {
 	left: 10px;
 }
 
+#chat {
+
+position: absolute;
+top: 200px; right: 50px;
+width: 200px; height: 600px;
+background-color: white;
+color: black;
+}
+
 .left {
 	background-color: white;
 	width: 40%;
