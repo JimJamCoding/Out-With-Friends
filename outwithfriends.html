@@ -1,0 +1,201 @@
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href='http://fonts.googleapis.com/css?family=Arvo:400,700italic' rel='stylesheet' type='text/css'>
+<script src="jquery.js" type="application/javascript"></script>
+
+<script type="application/javascript">
+$(document).ready(function(){
+	$("#checkbox").click(function(){
+		if($(this)[0].checked === true){
+			$("#text1").append("Gaming/TV,");
+		} else {
+			$("#text1").html(
+				$("#text1").html().split("Gaming/TV,").join(""));
+		}
+	
+	});
+        $("#checkbox1").click(function(){
+		if($(this)[0].checked === true){
+			$("#text1").append("Programming,");
+		} else {
+			$("#text1").html(
+				$("#text1").html().split("Programming,").join(""));
+		}
+	
+	});
+        $("#checkbox2").click(function(){
+		if($(this)[0].checked === true){
+			$("#text1").append("Sports,");
+		} else {
+			$("#text1").html(
+				$("#text1").html().split("Sports,").join(""));
+		}
+	
+	});
+        $("#checkbox3").click(function(){
+		if($(this)[0].checked === true){
+			$("#text1").append("Swimming,");
+		} else {
+			$("#text1").html(
+				$("#text1").html().split("Swimming,").join(""));
+		}
+	
+	});
+        $("#checkbox4").click(function(){
+		if($(this)[0].checked === true){
+			$("#text1").append("Camping,");
+		} else {
+			$("#text1").html($("#text1").html().split("Camping,").join(""));
+		}
+	
+	});
+        $("#checkbox5").click(function(){
+		if($(this)[0].checked === true){
+			$("#text1").append("Pets,");
+		} else {
+			$("#text1").html(
+				$("#text1").html().split("Pets,").join(""));
+		}
+	
+	});
+         $("#checkbox6").click(function(){
+		if($(this)[0].checked === true){
+			$("#text1").append("Cooking,");
+		} else {
+			$("#text1").html(
+				$("#text1").html().split("Cooking,").join(""));
+		}
+	
+	});
+        $("#checkbox7").click(function(){
+		if($(this)[0].checked === true){
+			$("#text1").append("Music,");
+		} else {
+			$("#text1").html(
+				$("#text1").html().split("Music,").join(""));
+		}
+	
+	});
+        $("#checkbox8").click(function(){
+		if($(this)[0].checked === true){
+			$("#text1").append("Science,");
+		} else {
+			$("#text1").html(
+				$("#text1").html().split("Science,").join(""));
+		}
+	
+	});
+        
+	
+});
+
+</script>
+<style>
+      html, body, #map-canvas {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script>
+var map;
+function initialize() {
+  map = new google.maps.Map(document.getElementById('map-canvas'), {
+    zoom: 8,
+    center: {lat: -34.397, lng: 150.644}
+  });
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+<html>
+<div id="logo">
+
+<img src="logo.jpg" alt="Out With Friends"> 
+</div>
+<p>This is a website to find and meet new people with the same interests as you. It is also good for the partially unsighted as it is mostly black and white</p>
+
+		<form>
+		
+		
+		
+		<div  class="left"> 
+					
+			First Name: <br><br/> 
+			<input type="text" id="text" name="text_name" size="30" margin="60" />
+			<br/>
+			My interests: <br><br/> 
+			<div id="text1" size="50" margin="60"></div>
+			<br/>
+			Gaming/TV: <br><br/> 
+            <input type="checkbox" id="checkbox" name="gaming" size="50" margin="60" />
+			<br>
+            Programming: <br><br/> 
+            <input type="checkbox" id="checkbox1" name="programming" size="50" margin="60" />
+            <br>
+            Sports: <br><br/> 
+            <input type="checkbox" id="checkbox2" name="football" size="50" margin="60" />
+            <br/>	
+            Swimming: <br> <br/>
+            <input type="checkbox" id="checkbox3" name="Swimming" size="50" margin="60"/>
+			<br>
+	    Camping: <br/><br/> 
+            <input type="checkbox" id="checkbox4" name="Camping" size="50" margin="60"/>
+			<br>
+	    Pets: <br/><br/> 
+            <input type="checkbox" id="checkbox5" name="Pets" size="50" margin="60"/>
+			<br>
+	    Cooking: <br/><br/> 
+            <input type="checkbox" id="checkbox6" name="Cooking" size="50" margin="60"/>
+			<br>
+	    Music: <br/><br/> 
+            <input type="checkbox" id="checkbox7" name="Music" size="50" margin="60"/>
+			<br>
+	    Science: <br/><br/> 
+            <input type="checkbox" id="checkbox8" name="Science" size="50" margin="60"/>
+
+			<br>
+		<div class="left">
+
+			I want to meet someone interested in: <br><br/> 
+			<input type="text" id="text2" name="iwnattomeetsomeoneinterestedin" size="30" margin="60" />	
+			<br/>
+			Gaming/TV: <br/><br/> 
+            <input type="checkbox" id="checkbox9" name="gaming" size="50" margin="60" />
+			<br>
+            Programming: <br><br/> 
+            <input type="checkbox" id="checkbox10" name="programming" size="50" margin="60" />
+            <br>
+            Sports: <br/><br/> 
+            <input type="checkbox" id="checkbox11" name="football" size="50" margin="60" />
+            <br/>	
+            Swimming: <br/> 
+            <input type="checkbox" id="checkbox12" name="Swimming" size="50" margin="60"/>
+			<br>
+			Camping: <br/><br/> 
+            <input type="checkbox" id="checkbox13" name="Camping" size="50" margin="60"/>
+			<br>
+			 Pets: <br/><br/> 
+            <input type="checkbox" id="checkbox14" name="Pets" size="50" margin="60"/>
+			<br>
+			Cooking: <br/><br/> 
+            <input type="checkbox" id="checkbox15" name="Cooking" size="50" margin="60"/>
+			<br>
+			Music: <br/><br/> 
+            <input type="checkbox" id="checkbox16" name="Music" size="50" margin="60"/>
+			<br>
+			Science: <br/><br/> 
+            <input type="checkbox" id="checkbox17" name="Science" size="50" margin="60"/>
+			<br>
+			
+			</div >
+	<div  class="left"> 		
+<div id="map-canvas"></div>
+	</div>		
+			
+		
+		</form>
+
+
