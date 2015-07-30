@@ -18,11 +18,15 @@ html {
 .left {
 	background-color: white;
 	width: 40%;
-    	display: inline-block;
+    	position: relative;
+	display: inline-block;
+	top: 0px; left: 0px;
 	
 }
 .right {
-	width: 50%;
+	width: 40%;
+	position: relative;
+	top: 0px; right: 0px;
 	display: inline-block;
 }
 
