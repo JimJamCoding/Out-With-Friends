@@ -167,6 +167,7 @@ $(document).ready(function(){
 	});
         $("#button1").click(function(){
 		$(".hideable").toggle();
+		$('html, body').animate({ scrollTop: 0 }, 'fast');
 	});
         $("#button2").click(function(){
 		if($(this)[0].checked === true){
