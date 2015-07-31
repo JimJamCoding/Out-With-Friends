@@ -115,7 +115,43 @@ p {
 		
 	}
 
-
+.button {
+background-color: blue;
+color: white;
+float: right;
+padding: 10px;
+width: 200px;
+height: 200px;
+}
+		
+.btn {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 60;
+  -moz-border-radius: 60;
+  border-radius: 60px;
+  text-shadow: 1px 1px 30px #232623;
+  font-family: Georgia;
+  color: #1c191c;
+  font-size: 60px;
+  padding: 10px 14px 11px 20px;
+  border: solid #1f628d 6px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #f7fcff;
+  background-image: -webkit-linear-gradient(top, #f7fcff, #3498db);
+  background-image: -moz-linear-gradient(top, #f7fcff, #3498db);
+  background-image: -ms-linear-gradient(top, #f7fcff, #3498db);
+  background-image: -o-linear-gradient(top, #f7fcff, #3498db);
+  background-image: linear-gradient(to bottom, #f7fcff, #3498db);
+  text-decoration: none;
+}
 	
 
 
