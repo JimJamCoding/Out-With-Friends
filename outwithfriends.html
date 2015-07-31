@@ -178,6 +178,10 @@ $(document).ready(function(){
 		}
 	
 	});
+	$("#addtext").click(function() {
+		$("#chat").append("<div>" + $("#chatbox").val() + "</div>");
+		$("#chatbox").val("");
+	});
 
 	
 });
@@ -287,7 +291,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 		</form>
 <div id="chat">
 	            Type a Message: <br><br/>
-			<input type="text" id="text" name="text_name" size="30" margin="60" />
+			<input type="text" id="chatbox" name="text_name" size="30" margin="60" /><input type="button" id="addtext" value="chat" />
 			<br><br/> 
 			<br><br/>
 </div>
